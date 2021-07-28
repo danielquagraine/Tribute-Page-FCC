@@ -1,0 +1,106 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+main{
+  background-image: url("https://www.si.com/.image/t_share/MTY4MTU1NDIwODcxMDQyMzIx/usain-bolt-puma-jamaica-track-and-fieldjpg.jpg");
+  background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: auto;
+   width: 100vw;
+   position: relative;
+
+}
+
+#image{
+object-fit: contain;
+ width: 100vw;
+ opacity: 0.9;
+}
+
+#img-div{
+  justify-content: center;
+  margin: auto;
+}
+#img-caption{
+  display: none;
+}
+
+img{
+display: block;
+max-width: 100%;
+}
+
+#Introduction{
+  display: flex;
+  margin:auto;
+  height: 100vh;
+  align-items: center;
+
+}
+
+#heading h1{
+  position: absolute;
+top:10px;
+left: 30px;
+  font-size: 170px;
+  color: yellow;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#heading h4{
+  position: absolute;
+top:500px;
+right:40px;
+  font-size: 40px;
+  color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:lighter;
+}
+
+#tribute-info{
+  height: 100vh;
+  width: 900px;
+  margin:auto;
+  font-family: 'Arial', sans-serif;
+  padding:30px 40px 20px 40px;
+  background: #FFFFFF;
+  opacity: 0.99;
+}
+
+#intro-text{
+  margin: 30px 0px 30px 0px;
+}
+
+#intro-text p{
+  font-size: 20px;
+}
+
+#timeline li{
+  display: flex;
+  align-items: center;
+
+}
+
+#timeline li h2{
+  background: yellow;
+  padding: 10px;
+  margin:10px 0px 10px 0px;
+}
+
+#timeline li p{
+  margin-left: 20px;
+}
+
+#externallink{
+  margin-top: 60px;
+}
+
+@media (max-width: 600px) {
+    #heading h1 {
+        font-size: 50%;
+    }
+
+  }

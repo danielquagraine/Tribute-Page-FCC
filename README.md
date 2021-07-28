@@ -1,5 +1,5 @@
 # Tribute-Page-FCC
-A freecodecamp projet
+A freecodecamp project
 
 
 Objective: Build a Tribute Page

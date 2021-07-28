@@ -1,6 +1,12 @@
 *{
   margin:0px;
   padding:0px;
+  box-sizing: border-box;
+
+}
+
+body{
+  position:relative;
 }
 
 main{
@@ -9,14 +15,12 @@ main{
    background-size: cover;
    background-position: center;
    margin: auto;
-   width: 100vw;
-   position: relative;
-
+  position:relative;
 }
 
 #image{
 object-fit: contain;
- width: 100vw;
+ width: 100%;
  opacity: 0.9;
 }
 
@@ -24,6 +28,7 @@ object-fit: contain;
   justify-content: center;
   margin: auto;
 }
+
 #img-caption{
   display: none;
 }
@@ -37,45 +42,47 @@ max-width: 100%;
   display: flex;
   margin:auto;
   height: 100vh;
+  width:100%;
   align-items: center;
 
 }
 
 #heading h1{
   position: absolute;
-top:10px;
-left: 30px;
-  font-size: 170px;
+  margin:auto;
+  top:10px;
+  left: 20px;
+  font-size: 10em;
   color: yellow;
   font-family: 'Roboto Condensed', sans-serif;
-}
+  }
 
 #heading h4{
-  position: absolute;
-top:500px;
-right:40px;
-  font-size: 40px;
+ position: absolute;
+top:400px;
+right:20px;
+ font-size: 2rem;
   color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight:lighter;
 }
 
 #tribute-info{
-  height: 100vh;
-  width: 900px;
-  margin:auto;
+  height: 100%;
+  width: 70%;
+  margin: auto;
   font-family: 'Arial', sans-serif;
-  padding:30px 40px 20px 40px;
+  padding:50px 40px;
   background: #FFFFFF;
   opacity: 0.99;
 }
 
 #intro-text{
-  margin: 30px 0px 30px 0px;
+  margin: 20px 0;
 }
 
 #intro-text p{
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 #timeline li{
@@ -95,12 +102,88 @@ right:40px;
 }
 
 #externallink{
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
-@media (max-width: 600px) {
-    #heading h1 {
-        font-size: 50%;
-    }
+footer {
+  display: flex;
+  width:100%;
+  height: 100px;
+  color: white;
+  background: #1C1D22;
+  align-items: center;
+  justify-content: center;
+}
 
+footer p{
+
+  Padding:0 1em;
+  text-align:center;
+}
+
+@media (min-width:768px) and (max-width:1072px)  {
+  #heading h1{
+  font-size: 6em;
   }
+
+  #heading h4{
+top:300px;
+right:20px;
+ font-size: 1.6rem;
+}
+
+}
+
+@media only screen  and (max-width:768px) {
+
+  main{
+  background-image: none;
+  }
+
+ #heading h1{
+   left: 10px;
+   max-width:70%;
+  font-size: 3em;
+  }
+
+  #heading h4{
+ display:none;
+}
+
+  #tribute-info{
+  margin:auto;
+  padding:1em;
+  width: 100%;
+}
+
+  #image{
+ width: 100%;
+}
+
+#img-div{
+  width:100%;
+}
+
+  #intro-text p{
+  font-size: 1em;
+}
+
+  #timeline li{
+ padding:0.5em 0;
+ }
+
+
+#timeline li h2{
+  background: yellow;
+  font-size:1.2em;
+  padding: 0.3em;
+  margin:10px 0px 10px 0px;
+}
+
+#timeline li p{
+  margin-left: 20px;
+}
+
+#externallink{
+  font-size:1em;
+ }
